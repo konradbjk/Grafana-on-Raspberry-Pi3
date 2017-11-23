@@ -8,11 +8,11 @@
 * Mouse and keyboard
 
 ## Table of content
-* [How to install Raspbian]()
-* [Things to do just after raspbian installation]()
-* [Installing MySQL and phpMyAdmin]()
-  * [Play with python]()
-* [Installation and setup of Grafana](/docs/grafana_installation.md)
+* [How to install Raspbian](https://github.com/konradbjk/Grafana-on-Raspberry-Pi3/blob/master/docs/raspbian_installation.md)
+* [Things to do just after raspbian installation](https://github.com/konradbjk/Grafana-on-Raspberry-Pi3/blob/master/docs/things_to_do_after_raspbian_installation.md)
+* [Installing MySQL and phpMyAdmin](https://github.com/konradbjk/Grafana-on-Raspberry-Pi3/blob/master/docs/mysql_setup.md)
+  * [Play with python](https://github.com/konradbjk/Grafana-on-Raspberry-Pi3/blob/master/docs/python_play.md)
+* [Installation and setup of Grafana](https://github.com/konradbjk/Grafana-on-Raspberry-Pi3/blob/master/docs/grafana_instalaltion.md)
   * [User Management]()
   * [Adding Data sources]()
   * [Installing addtitional plugins]()

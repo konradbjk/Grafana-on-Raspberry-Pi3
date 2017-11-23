@@ -17,7 +17,9 @@ To do so you need to use html. Add new Text panel and click on its name to choos
 ### CloudWatch
 If you have some EC2 instances on Amazon Web Services this one is perfect for you. It allows you to check state of instances without login to the console. You can ask for storage, cpu utilization and many more. Good for you that this plugin is installed by default.
 #### AWS
-I recommend to create user who will only have permissions only to CloudWatch. [Here](docs\AWS_policy_CloudWatch.txt) is AWS policy that I created for my user.
+I recommend to create user who will only have permissions only to CloudWatch. What is more, this user should be able only to login by Access Key and Secret Access Key (progamatical access). Remember to keep both of them in secure place. [Here](https://github.com/konradbjk/Grafana-on-Raspberry-Pi3/blob/master/docs/AWS_policy_CloudWatch.txt) is AWS policy that I created for my user.
+
+Full specification of the plugin is [here](http://docs.grafana.org/features/datasources/cloudwatch/)
 
 ### Clock
 If you would like to present for example countdown statistics this is what you need. Product launch countodwn? Here is how to work this out.
