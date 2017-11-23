@@ -32,6 +32,13 @@ sudo apt-get update && sudo apt-get upgrade
 ```
 It will start to check and download new version of existing packages.
 
+### RDP and SSH
+
+
+```
+sudo apt-get install xrdp
+```
+
 ### MySQL installation
 When you finish apt-get update and upgrade it is time to install MySQL.
 ```bash
@@ -54,3 +61,8 @@ After setting MySQL to access and manage it with nice UI, it is recommended to i
 sudo apt-get install phpmyadmin
 ```
 During the installation you will be prompted to chose between apache and light-httpd. Chose apache. Next you will be asked to configure db for phpMyAdmin, chose yes. Next screen will ask you to type root password to you MySQL and confirm it once again.
+
+
+## Graphana
+
+msyql user 'grafana-reader'@'localhost' 'rpi'
