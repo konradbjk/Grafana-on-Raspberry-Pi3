@@ -1,0 +1,23 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+          "Effect": "Allow",
+          "Action": [
+              "cloudwatch:Describe*",
+              "ec2:Describe*",
+              "autoscaling:Describe*",
+              "cloudwatch:Describe*",
+              "cloudwatch:Get*",
+              "cloudwatch:List*",
+              "logs:Get*",
+              "logs:List*",
+              "logs:Describe*",
+              "logs:TestMetricFilter",
+              "sns:Get*",
+              "sns:List*"
+          ],
+          "Resource": "*"
+      }
+    ]
+}
