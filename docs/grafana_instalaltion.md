@@ -21,10 +21,17 @@ It is important to create different organisations. I will create accessible to e
 
 ## Data Sources
 Data sources allows you to import your data to Grafana. What is more if you want just to check grafana solution, there is possibility to use [test data](http://docs.grafana.org/features/datasources/testdata/). Data Sources can be added by clicking in the top left corner on the grafana logo. Next from dropdown menu choose *Data Sources*.
-![data_sources](https://github.com/konradbjk/Grafana-on-Raspberry-Pi3/blob/master/graphics/data_sources.png). In the next step click on *Add data source* button. Now you can choose type of  data source, for example MySQL like here. ![add_data_source](https://github.com/konradbjk/Grafana-on-Raspberry-Pi3/blob/master/graphics/add_data_source.png). Depending on the source you need to feel different fiels.
+
+![data_sources](https://github.com/konradbjk/Grafana-on-Raspberry-Pi3/blob/master/graphics/data_sources.png).
+
+In the next step click on *Add data source* button. Now you can choose type of  data source, for example MySQL like here.
+
+![add_data_source](https://github.com/konradbjk/Grafana-on-Raspberry-Pi3/blob/master/graphics/add_data_source.png).
+
+Depending on the source you need to feel different fiels.
 
 ### Import data from MySQL
-Firstly you should name your data source, possibly something that is connected to the data located in the database. Next please choose MySQL as Type. In one of previous steps we did [install MySQL locally on Raspberry Pi]((https://github.com/konradbjk/Grafana-on-Raspberry-Pi3/blob/master/docs/mysql_setup.md)). So in this scenario the host field should be ```loaclhost:3306``` as it is default option, if you had changed it while installing MySQL use adequate port number. In the *Database* fill the name of Database you have created. Next fill the credentails of your grafana-reader account. You need to repeat the proccess for each of the databases you had created.
+Firstly you should name your data source, possibly something that is connected to the data located in the database. Next please choose MySQL as Type. In one of previous steps we did [install MySQL locally on Raspberry Pi](https://github.com/konradbjk/Grafana-on-Raspberry-Pi3/blob/master/docs/mysql_setup.md). So in this scenario the host field should be ```loaclhost:3306``` as it is default option, if you had changed it while installing MySQL use adequate port number. In the *Database* fill the name of Database you have created. Next fill the credentails of your grafana-reader account. You need to repeat the proccess for each of the databases you had created.
 
 ### AWS CloudWatch
 If you have some EC2 instances on Amazon Web Services this one is perfect for you. It allows you to check state of instances without login to the console. You can ask for storage, cpu utilization and many more. Good for you that this data source is installed by default.
