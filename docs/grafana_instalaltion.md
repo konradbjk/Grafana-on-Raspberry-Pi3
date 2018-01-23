@@ -43,6 +43,20 @@ Full specification of CloudWatch is [here](http://docs.grafana.org/features/data
 ## How to...
 This section will provide quick guides how to do small improvments.
 
+### Printing Data series
+Having MySQL DB with table called Beacon Application we have multiple records there. This table structure is like below
+![Structure of Beacon Applications MySQL](beacon_application_db_structure.png)
+This table consist of values which are target ones for each of the months and the actual vale, which is updated on daily basis.
+Next you have to create new Dashboard. Please select the Graph panel. In the General tab, change the name. Next navigate to Axes tab. Set in Left Y *Y-min* to *0* next uncheck Right Y and change X-axis mode to Series. Now go to Metrics tab. The best option is to create SQL querry for each of the columns separately (in our example it is 2 per graph, one for Target and one for Actual). Remember to choose the right data source.
+```SQL
+SELECT 
+UNIX_TIMESTAMP(date_column) as time_sec, 
+smart_beacon_actual as value,
+"Smart Beacon actual" as metric
+FROM BeaconApplications
+ORDER BY date_column DESC
+LIMIT 1
+```
 ### Enable access to dashboards without need to login
 Inside the *grafana.ini* file scroll down to find Anonymous Auth section and change as specified below (remember to delete the semicolon in front of each line you had edited)
 ```
